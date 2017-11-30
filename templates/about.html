@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% extends "homepage.html"%}
+{% block title %}About Me{% endblock %}
+
+{% block head%}
+  {{ super() }}
+{% endblock%}
+
+{% block page_content%}
+  <!-- Page Content -->
+  <div style="text-align: center;" class="container">
+    <h1 class="mt-5"><i class="fa fa-address-card-o" aria-hidden="true"></i> ABOUT ME</h1>
+    <div class="social_media">
+      <h3>My Social Media Accounts:</h3>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="btn-social btn-outline" href="#">
+            <i class="fa fa-fw fa-facebook"></i>
+            <img src="http://www.facebook.com" alt="">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-social btn-outline" href="#">
+            <i class="fa fa-fw fa-twitter"></i>
+            <img src="http://www.twitter.com" alt="">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-social btn-outline" href="#">
+            <i class="fa fa-fw fa-google-plus"></i>
+            <img src="http://www.google.com" alt="">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-social btn-outline" href="#">
+            <i class="fa fa-fw fa-linkedin"></i>
+            <img src="http://www.linkedin.com" alt="">
+          </a>
+        </li>
+      </ul>
+      </div>
+      <p style="text-align: center;" class = "para">
+        I am a junior at the University of Delaware. I am Currently studying Management Information Systems.
+      </p>
+    <p>
+      I have experience with the following programs:
+    </p>
+    <ul style="list-style-type: none;">
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>Python</li>
+      <li>CSS</li>
+    </ul>
+    <p>This project is developed by <a id="developer" href="https://github.com/mbsteiger" data-toggle="tooltip" data-placement="top" title="I'm currently a Junior at University of Delaware">Matthew Steiger</a>.</p>
+
+  </div>
+{% endblock%}
+
+{% block scripts%}
+  {{super()}}
+  <script>
+  $(document).ready(function () {
+    $('#developer').tooltip()
+  });
+  </script>
+{% endblock%}
